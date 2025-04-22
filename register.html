@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>RegisterPage</title>
+</head>
+<body>
+    <div class="container mt-5">
+        <fieldset class="row p-5 mt-3 ms-auto me-auto d-flex justify-content-center border border-1 border-secondary rounded">
+            <legend class="row my-3 d-flex justify-content-center text-center fw-bold fs-3 text-secondary">
+                RegisterUserForm
+            </legend>
+            <form action="" method="get" enctype="multipart/form-data" class="border-top border-2 border-light mx-auto my-3 p-3">
+                <div id="div-fullname">
+                    <label for="id_fullname" class="form-label text-secondary my-3">
+                        Your Fullname :
+                    </label>
+                    <div class="input-group">
+                        <label for="id_fullname" id="addon-fullname" class="input-group-text">
+                            <i class="bi bi-person-video"></i>
+                        </label>
+                        <div class="form-floating">
+                            <input type="text" name="fullname" id="id_fullname" class="form-control" placeholder="plaese enter your fullname" required>
+                            <label for="id_fullname">
+                                fullname
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="div-phonenumber">
+                    <label for="id_phonenumber" class="form-label text-secondary my-3">
+                        Your Phonenumber :
+                    </label>
+                    <div class="input-group">
+                        <label for="id_phonenumber" id="addon-phonenumber" class="input-group-text">
+                            <i class="bi bi-telephone-plus"></i>
+                        </label>
+                        <div class="form-floating">
+                            <input type="text" name="phonenumber" id="id_phonenumber" class="form-control" placeholder="plaese enter your phonenumber" maxlength="11" minlength="11" required>
+                            <label for="id_phonenumber">
+                                phonenumber
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="div-birthdate">
+                    <label for="id_birthdate" class="form-label text-secondary my-3">
+                        Your Birth Date :
+                    </label>
+                    <div class="input-group">
+                        <label for="id_birthdate" id="addon-birthdate" class="input-group-text">
+                            <i class="bi bi-calendar-check-fill"></i>
+                        </label>
+                        <div class="form-floating">
+                            <input type="date" name="birthdate" id="id_birthdate" class="form-control" placeholder="plaese enter your birth date" required>
+                            <label for="id_birthdate">
+                                birth date
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="div-nationalID">
+                    <label for="id_nationalID" class="form-label text-secondary my-3">
+                         Your National ID :
+                    </label>
+                    <div class="input-group">
+                        <label for="id_nationalID" id="addon-nationalID" class="input-group-text">
+                            <i class="bi bi-chevron-bar-right"></i>
+                        </label>
+                        <div class="form-floating">
+                            <input type="number" name="nationalIDuser" id="id_nationalID" class="form-control" placeholder="plaese enter your national ID" maxlength="10" minlength="10" required>
+                            <label for="id_nationalID mb-3">
+                                national ID
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="div-nationalIDcard">
+                    <label for="id_nationalIDcard" class="form-label text-secondary my-3">
+                        Upload Your National ID Card :
+                    </label>
+                    <div class="input-group">
+                        <label for="id_nationalIDcard" id="addon-nationalIDcard" class="input-group-text">
+                            <i class="bi bi-file-earmark-fill"></i>
+                        </label>
+                        <div class="form-floating">
+                            <input type="file" name="nationalIDcard" id="id_nationalIDcard" class="form-control" placeholder="plaese enter your national ID card" required>
+                            <!-- <label for="id_birthdate mb-3">
+                                national ID card
+                            </label> -->
+                        </div>
+                    </div>
+                </div>
+
+                <div id="div-jender">
+                    <label for="" class="form-label text-secondary my-3 me-5">
+                        Select Your Jender :
+                    </label>
+                    <div id="div-womanjender">
+                        <input type="radio" id="id_womanjender" name="woman" value="woman" />
+                        <label for="id_womanjender" class="ms-2">Woman</label>
+                    </div>
+                    <div id="div-manjender">
+                        <input type="radio" id="id_manjenderr" name="man" value="man" />
+                        <label for="id_manjender" class="ms-2">Man</label>
+                    </div>
+                </div>
+
+                <div id="div-submit-registerform" class="my-3">
+                    <div class="row d-flex justify-content-center w-25">
+                        <button type="submit" class="btn btn-light">
+                            <span>
+                                <i class="bi bi-box-arrow-in-right"></i>
+                            </span>
+                            Register
+                        </button>
+                    </div>
+                </div>
+
+            </form>
+        </fieldset>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+</body>
+</html>
